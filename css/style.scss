@@ -1,0 +1,235 @@
+// Variables
+$font-family: 'Open Sans';
+$font-color: #1f2021;
+$color-cyan: #00c7fc;
+$color-gray: #b4b4b4;
+$color-white: #fff;
+$cyan-opacity: hsla(193, 100%, 49%, 0.5);
+$top-padding: 25px;
+$font-size: 13px;
+$title-size: 30px;
+$services-title: 20px;
+$quote-size: 24px;
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic');
+
+// RESET CSS
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+
+    &:before,
+    &:after,
+        {
+        content: '';
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// MAIN CSS
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+    max-width: 100%;
+}
+
+
+// HEADER
+header {
+    width: 100%;
+    height: 100vh;
+    color: $color-white;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/image-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .navbar {
+        background: none;
+        border-bottom: 4px solid $cyan-opacity;
+        transition: all 0.4s ease;
+        .navigation-bar {
+            max-width: 1000px;
+            margin: 0 auto;
+            .navbar-header {
+                .navbar-brand {
+                    background: url(../img/logo.png) center / contain no-repeat;
+                    width: 100px;
+                    height: 50px;
+                    margin: 7px 0px;
+                }
+            }
+        }
+        #navbar {
+            .navbar-nav {
+                li {
+                    a.active {
+                        color: $color-cyan;
+                        background: none;
+                    }
+                }
+                li {
+                    padding: $top-padding 15px;
+                    a {
+                        font-size: $font-size;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        padding: 2px;
+                    }
+                    a:hover {
+                        border-bottom: 2px solid $color-cyan;
+                        padding-bottom: 0px;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+    .container-fluid {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        .title-container {
+            background-color: $cyan-opacity;
+            height: 100%;
+            .title-text {
+                padding: 35px;
+                max-width: 70%;
+                float: right;
+                h1 {
+                    font-size: $title-size;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 1.6;
+                    span {
+                        text-transform: none;
+                    }
+                }
+                p {
+                    padding: $top-padding 0px;
+                    line-height: 2;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
