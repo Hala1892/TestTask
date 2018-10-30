@@ -423,4 +423,48 @@ header .container-fluid .title-container .title-text p {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+footer {
+  margin-top: 80px;
+  background-color: #121116;
+  padding: 50px 0px 25px 0px;
+}
+
+footer .footer-logo {
+  padding: 25px;
+}
+
+footer .footer-logo img {
+  margin: 0 auto;
+  display: block;
+}
+
+footer .socials {
+  color: #fff;
+}
+
+footer .socials h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}
+
+footer .socials hr {
+  width: 250px;
+}
+
+footer .socials p i {
+  padding: 0px 15px;
+}
+
+footer .footer-credits {
+  font-size: 15px;
+  color: #fff;
+  padding-top: 50px;
+}
+
+footer .footer-credits span {
+  color: #00c7fc;
+}
 /*# sourceMappingURL=style.css.map */

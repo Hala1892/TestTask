@@ -398,3 +398,42 @@ header {
         text-transform: uppercase;
     }
 }
+
+// FOOTER
+footer {
+    margin-top: 80px;
+    background-color: #121116;
+    padding: 50px 0px 25px 0px;
+    .footer-logo{
+        padding: $top-padding;
+        img{
+            margin: 0 auto;
+             display:block;
+              }
+    } 
+    .socials {
+        color: $color-white;
+        h1 {
+            font-size: $services-title;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 300;
+        }
+        hr {
+            width: 250px;
+        }
+        p{
+            i{
+                padding: 0px 15px;
+            }
+        }
+    }
+    .footer-credits {
+        font-size: 15px;
+        color: $color-white;
+        padding-top: 50px;
+        span {
+            color: $color-cyan;
+        }
+    }
+}
