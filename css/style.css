@@ -296,4 +296,37 @@ header .container-fluid .title-container .title-text p {
 #services .services-grid .service-text p {
   color: #b4b4b4;
 }
+
+#bg-text .container-fluid {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.45))), url(../img/image-2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.45)), url(../img/image-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-text .container-fluid .col-md-12 {
+  margin: 100px 0px;
+  padding: 50px;
+}
+
+#bg-text .container-fluid .col-md-12 .bg-text {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 100px 25px;
+  background-color: rgba(0, 196, 250, 0.5);
+  color: #fff;
+}
+
+#bg-text .container-fluid .col-md-12 .bg-text h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+#bg-text .container-fluid .col-md-12 .bg-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
 /*# sourceMappingURL=style.css.map */
