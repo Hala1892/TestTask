@@ -270,7 +270,7 @@ header .container-fluid .title-container .title-text p {
   cursor: pointer;
 }
 
-#services .services-grid .service-box:hover .service-icon img {
+#services .services-grid .service-box:hover .service-icon embed {
   border: 2px solid #00c7fc;
   border-radius: 100%;
   padding: 20px;
