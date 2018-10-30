@@ -222,4 +222,37 @@ header .container-fluid .title-container .title-text p {
   line-height: 2;
   font-weight: 300;
 }
+
+#services .services-grid .service-box {
+  margin: 15px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+#services .services-grid .service-box:hover .service-icon img {
+  border: 2px solid #00c7fc;
+  border-radius: 100%;
+  padding: 20px;
+  margin: -22px;
+}
+
+#services .services-grid .service-icon {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+#services .services-grid .service-text {
+  line-height: 1.6;
+}
+
+#services .services-grid .service-text h1 {
+  font-size: 20px;
+  color: #00c7fc;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+#services .services-grid .service-text p {
+  color: #b4b4b4;
+}
 /*# sourceMappingURL=style.css.map */
