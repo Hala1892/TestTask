@@ -329,4 +329,98 @@ header .container-fluid .title-container .title-text p {
   font-weight: 400;
   line-height: 2;
 }
+
+#contact .row {
+  padding: 0px 100px;
+}
+
+#contact .contacts {
+  padding: 25px;
+}
+
+#contact .contacts .form-area {
+  padding: 50px 0px;
+}
+
+#contact .contacts .form-area form .form-group input,
+#contact .contacts .form-area form .form-group textarea {
+  border: 1px solid #dbdbdb;
+  border-radius: 0px;
+  padding: 25px;
+}
+
+#contact .contacts .form-area form .btn {
+  background-color: #00c7fc;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 15px 50px;
+  margin-top: 25px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#contact .contacts .form-area form .btn:hover {
+  background-color: #fff;
+  color: #00c7fc;
+  -webkit-box-shadow: 0px 0px 0px 1px #dbdbdb;
+          box-shadow: 0px 0px 0px 1px #dbdbdb;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#contact .contacts-info {
+  padding: 25px 0px;
+}
+
+#contact .contacts-info .contact-details, #contact .contacts-info .contact-location {
+  padding-top: 25px;
+}
+
+#contact .contacts-info .contact-details h1, #contact .contacts-info .contact-location h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 5;
+}
+
+#contact .contacts-info .contact-details p, #contact .contacts-info .contact-location p {
+  color: #b4b4b4;
+  line-height: 2;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+#contact .contacts-info .contact-details a:hover, #contact .contacts-info .contact-details a:focus, #contact .contacts-info .contact-location a:hover, #contact .contacts-info .contact-location a:focus {
+  text-decoration: none;
+}
+
+#contact .contacts-info .contact-details a:hover p, #contact .contacts-info .contact-details a:focus p, #contact .contacts-info .contact-location a:hover p, #contact .contacts-info .contact-location a:focus p {
+  color: #00c7fc;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+#contact ::-webkit-input-placeholder {
+  color: #1f2021 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#contact :-ms-input-placeholder {
+  color: #1f2021 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#contact ::-ms-input-placeholder {
+  color: #1f2021 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#contact ::placeholder {
+  color: #1f2021 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
