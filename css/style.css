@@ -229,6 +229,25 @@ header .navbar #navbar .navbar-nav li a:hover {
   background: none;
 }
 
+header .navbar-fixed-top {
+  background: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header .navbar-fixed-top .navigation-bar .navbar-header .navbar-brand {
+  background: url(../img/logo-black.png) center/contain no-repeat;
+}
+
+header .navbar-fixed-top #navbar .navbar-nav .active a {
+  color: #00c7fc;
+}
+
+header .navbar-fixed-top #navbar .navbar-nav li a {
+  color: #1f2021;
+  font-weight: 600;
+}
+
 header .container-fluid {
   position: absolute;
   top: 60%;
@@ -456,6 +475,11 @@ footer .socials hr {
 
 footer .socials p i {
   padding: 0px 15px;
+  cursor: pointer;
+}
+
+footer .socials p i:hover {
+  color: #00c7fc;
 }
 
 footer .footer-credits {
@@ -466,6 +490,146 @@ footer .footer-credits {
 
 footer .footer-credits span {
   color: #00c7fc;
+}
+
+.close-modal {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.close-modal .close-modal img {
+  width: 25px;
+  height: 25px;
+}
+
+.modal-content {
+  margin: 20% auto;
+  border-radius: 0px;
+  text-transform: uppercase;
+  padding: 25px 10px;
+  max-width: 500px;
+}
+
+.modal-content h1 {
+  font-size: 24px;
+}
+
+.modal-content form {
+  padding: 25px 0px 15px 0px;
+}
+
+.modal-content form label {
+  font-weight: 600;
+  letter-spacing: 1.2;
+  padding: 5px 0px;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  border: 1px solid #dbdbdb;
+  border-radius: 0px;
+  padding: 25px;
+}
+
+.modal-content form .checkbox {
+  text-transform: initial;
+  text-align: center;
+}
+
+.modal-content form #checkbox-1 {
+  position: absolute;
+  opacity: 0;
+}
+
+.modal-content form #checkbox-1 + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-content form #checkbox-1 + label:before {
+  content: '';
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #dbdbdb;
+}
+
+.modal-content form #checkbox-1:hover + label:before {
+  background: #00c7fc;
+}
+
+.modal-content form #checkbox-1:focus + label:before {
+  -webkit-box-shadow: 0 0 0 1px #1f2021;
+          box-shadow: 0 0 0 1px #1f2021;
+}
+
+.modal-content form #checkbox-1:checked + label:before {
+  background: #00c7fc;
+}
+
+.modal-content form #checkbox-1:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: #1f2021;
+  width: 3px;
+  height: 3px;
+  -webkit-box-shadow: 2px 0 0 #1f2021, 4px 0 0 #1f2021, 4px -2px 0 #1f2021, 4px -4px 0 #1f2021, 4px -6px 0 #1f2021, 4px -8px 0 #1f2021;
+          box-shadow: 2px 0 0 #1f2021, 4px 0 0 #1f2021, 4px -2px 0 #1f2021, 4px -4px 0 #1f2021, 4px -6px 0 #1f2021, 4px -8px 0 #1f2021;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-content form .btn {
+  background-color: #00c7fc;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 15px 50px;
+  margin-top: 25px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.modal-content form .btn:hover {
+  background-color: #fff;
+  color: #00c7fc;
+  -webkit-box-shadow: 0px 0px 0px 1px #dbdbdb;
+          box-shadow: 0px 0px 0px 1px #dbdbdb;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.modal-content ::-webkit-input-placeholder {
+  color: #b4b4b4;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-content :-ms-input-placeholder {
+  color: #b4b4b4;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-content ::-ms-input-placeholder {
+  color: #b4b4b4;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-content ::placeholder {
+  color: #b4b4b4;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 820px) {
