@@ -245,6 +245,7 @@ header .navbar-fixed-top #navbar .navbar-nav li a {
 
 header .container-fluid {
   position: absolute;
+  width: 100%;
   top: 60%;
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
