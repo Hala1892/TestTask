@@ -195,12 +195,12 @@ header .navbar {
 }
 
 header .navbar .navigation-bar {
-  width: 100%;
+  width: 95%;
 }
 
 header .navbar .navigation-bar .navbar-header .navbar-brand {
   background: url(../img/logo.png) center/contain no-repeat;
-  width: 100px;
+  width: 45px;
   height: 45px;
   margin: 7px 0px;
 }
@@ -287,16 +287,13 @@ header .container-fluid .title-container .title-text p {
   cursor: pointer;
 }
 
-#services .services-grid .service-icon {
-  display: inline-block;
-  padding: 10px 25px;
-}
-
-#services .services-grid .service-box:hover .service-icon img {
+#services .services-grid .service-box:hover .service-icon span {
   border: 2px solid #00c7fc;
   border-radius: 100%;
   padding: 20px;
   margin: -22px;
+  position: absolute;
+  top: 0%;
 }
 
 #services .services-grid .service-text {
@@ -628,17 +625,11 @@ footer .footer-credits span {
 @media only screen and (max-width: 1024px) {
   header .container-fluid {
     position: relative;
-    background-color: rgba(0, 196, 250, 0.5);
-    margin: 5px 10px 25px 0px;
     top: 50%;
-  }
-  header .container-fluid .title-container {
-    background: none;
   }
   header .container-fluid .title-container .title-text {
     padding: 5px;
     max-width: 100%;
-    float: none;
   }
   header .container-fluid .title-container .title-text h1 {
     font-size: 24px;
@@ -728,12 +719,6 @@ footer .footer-credits span {
   header .navbar #navbar .navbar-nav li a:hover {
     background-color: #00c7fc;
     color: #fff;
-  }
-  header .container-fluid {
-    position: relative;
-    background-color: rgba(0, 196, 250, 0.5);
-    margin: 5px 10px 25px 0px;
-    top: 50%;
   }
   header .container-fluid .title-container {
     height: 100%;
