@@ -5,7 +5,7 @@ var navbar = document.getElementById("sticky-navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset - 120 >= sticky) {
+  if (window.pageYOffset - 60 >= sticky) {
     $(".navbar").addClass("navbar-fixed-top");
     $(".navbar").removeClass("navbar-static-top");
   } else {
@@ -28,9 +28,9 @@ $(document).ready(function () {
           menu = target;
       $target = $(target);
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
+          'scrollTop': $target.offset().top - 100
       }, 900, 'swing', function () {
-          window.location.hash = target;
+          window.location.hash = target - 100;
           $(document).on("scroll", onScroll);
       });
   });
@@ -41,7 +41,7 @@ function onScroll(event){
   $('.navbar-nav li a').each(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      if (refElement.position().top -100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
           $('.navbar-nav li a').removeClass("active");
           currLink.addClass("active");
       }
