@@ -194,10 +194,6 @@ header .navbar {
   transition: all 0.4s ease;
 }
 
-header .navbar .navigation-bar {
-  width: 95%;
-}
-
 header .navbar .navigation-bar .navbar-header .navbar-brand {
   background: url(../img/logo.png) center/contain no-repeat;
   width: 45px;
