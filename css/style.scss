@@ -304,13 +304,11 @@ header {
             margin: 15px;
             padding: $top-padding;
             cursor: pointer;
-
         }
         .service-icon {
-
-            img {
-            }
-            
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
         }
         .service-box:hover {
             .service-icon {
@@ -318,17 +316,7 @@ header {
                     border: 2px solid $color-cyan;
                     border-radius: 100%;
                     padding: 20px;
-                    margin: -22px;
-                    position: absolute;
-                    top: 0%;
-                }
-
-                img {
-                    // border: 2px solid $color-cyan;
-                    // border-radius: 20%;
-                    // padding: 20px;
-                    // margin: -22px;
-                    // overflow: hidden;
+                    margin: -22px auto;
                 }
             }
         }
@@ -355,6 +343,7 @@ header {
     background-size: cover;
     .col-md-12 {
         margin: 100px 0px;
+        padding: $top-padding;
         .bg-text {
             margin: 0px auto;
             padding: 100px 25px;
@@ -587,6 +576,22 @@ footer {
     }
 }
 // RESPONSIVE
+@media only screen and (max-width: 1200px) {
+    .contacts-info {
+        padding: 0px;
+        text-align:center;
+        .contact-details,.contact-location {
+            padding-top: 0px;
+            h1 {
+                font-size: $quote-size;
+                line-height: 3.5;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1024px) {
     header {
         .container-fluid {
@@ -611,9 +616,10 @@ footer {
     // SERVICES
     #services {
         .services-grid {
-            .service-icon{
-                    display: flex;
-                    justify-content: center;
+            .service-box {
+            }
+            .service-icon {
+                margin: 25px auto;
             }
             .service-text {
                 text-align:center;
@@ -650,20 +656,6 @@ footer {
                 }
             }
         }
-        .contacts-info {
-            padding: 0px;
-            text-align:center;
-            .contact-details,.contact-location {
-                padding-top: 0px;
-                h1 {
-                    font-size: $quote-size;
-                    line-height: 3.5;
-                }
-                p{
-                    font-size: 16px;
-                }
-            }
-        }
     }
 }
 
@@ -675,6 +667,9 @@ header {
         transition: background 0.4s ease;
         .navigation-bar {
             .navbar-header {
+                .navbar-brand {
+                    margin-left: 25px;
+                }
                 .navbar-toggle {
                     background: $color-cyan !important;
                     padding: 10px 15px;
@@ -705,79 +700,8 @@ header {
         }
     }
     .container-fluid {
-
         .title-container {
             height: 100%;
-            .title-text {
-                padding: 5px;
-                max-width: 100%;
-                float: none;
-                h1 {
-                    font-size: 24px;
-                    line-height: 1.6;
-                }
-                p{
-                    font-weight: 300;
-                    letter-spacing: 1px;
-                }
-            }
-        }
-    }
-}
-// SERVICES
-#services {
-    .services-grid {
-        .service-icon{
-                display: flex;
-                justify-content: center;
-        }
-        .service-text {
-            text-align:center;
-        }
-    }
-}
-// BACKGROUND WITH TEXT
-#bg-text .container-fluid {
-    .col-md-12 {
-        margin: 25px 0px;
-        padding: 25px;
-        .bg-text {
-            padding: 100px 5px;
-            h1 {
-                font-size: 20px;
-                line-height: 1.2;
-            }
-        }
-    }
-}
-// CONTACT US
-#contact {
-    .row {
-        padding: 0px;
-    }
-    .contacts {
-        padding: $top-padding;
-        .form-area {
-            form {
-                text-align:center;
-                .btn {
-                    float: none !important;
-                }
-            }
-        }
-    }
-    .contacts-info {
-        padding: 0px;
-        text-align:center;
-        .contact-details,.contact-location {
-            padding-top: 0px;
-            h1 {
-                font-size: $quote-size;
-                line-height: 3.5;
-            }
-            p{
-                font-size: 16px;
-            }
         }
     }
 }

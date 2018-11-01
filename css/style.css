@@ -284,13 +284,21 @@ header .container-fluid .title-container .title-text p {
   cursor: pointer;
 }
 
+#services .services-grid .service-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+}
+
 #services .services-grid .service-box:hover .service-icon span {
   border: 2px solid #00c7fc;
   border-radius: 100%;
   padding: 20px;
-  margin: -22px;
-  position: absolute;
-  top: 0%;
+  margin: -22px auto;
 }
 
 #services .services-grid .service-text {
@@ -318,6 +326,7 @@ header .container-fluid .title-container .title-text p {
 
 #bg-text .container-fluid .col-md-12 {
   margin: 100px 0px;
+  padding: 25px;
 }
 
 #bg-text .container-fluid .col-md-12 .bg-text {
@@ -619,6 +628,23 @@ footer .footer-credits span {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1200px) {
+  .contacts-info {
+    padding: 0px;
+    text-align: center;
+  }
+  .contacts-info .contact-details, .contacts-info .contact-location {
+    padding-top: 0px;
+  }
+  .contacts-info .contact-details h1, .contacts-info .contact-location h1 {
+    font-size: 24px;
+    line-height: 3.5;
+  }
+  .contacts-info .contact-details p, .contacts-info .contact-location p {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   header .container-fluid {
     position: relative;
@@ -637,12 +663,7 @@ footer .footer-credits span {
     letter-spacing: 1px;
   }
   #services .services-grid .service-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 25px auto;
   }
   #services .services-grid .service-text {
     text-align: center;
@@ -670,26 +691,15 @@ footer .footer-credits span {
   #contact .contacts .form-area form .btn {
     float: none !important;
   }
-  #contact .contacts-info {
-    padding: 0px;
-    text-align: center;
-  }
-  #contact .contacts-info .contact-details, #contact .contacts-info .contact-location {
-    padding-top: 0px;
-  }
-  #contact .contacts-info .contact-details h1, #contact .contacts-info .contact-location h1 {
-    font-size: 24px;
-    line-height: 3.5;
-  }
-  #contact .contacts-info .contact-details p, #contact .contacts-info .contact-location p {
-    font-size: 16px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
   header .navbar {
     -webkit-transition: background 0.4s ease;
     transition: background 0.4s ease;
+  }
+  header .navbar .navigation-bar .navbar-header .navbar-brand {
+    margin-left: 25px;
   }
   header .navbar .navigation-bar .navbar-header .navbar-toggle {
     background: #00c7fc !important;
@@ -719,67 +729,6 @@ footer .footer-credits span {
   }
   header .container-fluid .title-container {
     height: 100%;
-  }
-  header .container-fluid .title-container .title-text {
-    padding: 5px;
-    max-width: 100%;
-    float: none;
-  }
-  header .container-fluid .title-container .title-text h1 {
-    font-size: 24px;
-    line-height: 1.6;
-  }
-  header .container-fluid .title-container .title-text p {
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-  #services .services-grid .service-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #services .services-grid .service-text {
-    text-align: center;
-  }
-  #bg-text .container-fluid .col-md-12 {
-    margin: 25px 0px;
-    padding: 25px;
-  }
-  #bg-text .container-fluid .col-md-12 .bg-text {
-    padding: 100px 5px;
-  }
-  #bg-text .container-fluid .col-md-12 .bg-text h1 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  #contact .row {
-    padding: 0px;
-  }
-  #contact .contacts {
-    padding: 25px;
-  }
-  #contact .contacts .form-area form {
-    text-align: center;
-  }
-  #contact .contacts .form-area form .btn {
-    float: none !important;
-  }
-  #contact .contacts-info {
-    padding: 0px;
-    text-align: center;
-  }
-  #contact .contacts-info .contact-details, #contact .contacts-info .contact-location {
-    padding-top: 0px;
-  }
-  #contact .contacts-info .contact-details h1, #contact .contacts-info .contact-location h1 {
-    font-size: 24px;
-    line-height: 3.5;
-  }
-  #contact .contacts-info .contact-details p, #contact .contacts-info .contact-location p {
-    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
